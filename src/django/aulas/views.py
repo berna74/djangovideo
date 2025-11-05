@@ -19,9 +19,9 @@ def edad(request, anios, futuro):
 
     return HttpResponse(mensaje)
 
-def primer_plantilla(request):
+def primera_plantilla(request):
     
-    tpl = get_template("primer_plantilla.html")
+    tpl = get_template("primera_plantilla.html")
 
     ctx = Context(
         
@@ -61,3 +61,4 @@ def tercera_plantilla(request):
         'fecha': date.today()
     })
        
+    
