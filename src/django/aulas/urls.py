@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import hello, goodbye, edad, primera_plantilla, segunda_plantilla , tercera_plantilla  
+from .views import hello, goodbye, edad, primera_plantilla, segunda_plantilla , tercera_plantilla , cuarta_plantilla 
 
 urlpatterns = [
    path('hello/', hello, name='hello'),  # Placeholder for aulas app URLs
@@ -8,6 +8,7 @@ urlpatterns = [
    path('primera_plantilla', primera_plantilla, name='primera_plantilla'),  # New URL pattern for primer_plantilla view
    path('segunda_plantilla', segunda_plantilla, name='segunda_plantilla'),  # New URL pattern for segunda_plantilla view
    path('tercera_plantilla', tercera_plantilla, name='tercera_plantilla'),  # New URL pattern for tercera_plantilla view
+   path('cuarta_plantilla', cuarta_plantilla, name='cuarta_plantilla'),  # New URL pattern for cuarta_plantilla view
    ]
 
 

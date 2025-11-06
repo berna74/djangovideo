@@ -61,4 +61,13 @@ def tercera_plantilla(request):
         'fecha': date.today()
     })
        
+def cuarta_plantilla(request):
     
+    tpl = get_template("cuarta_plantilla.html")
+
+    
+
+    return render(request, "cuarta_plantilla.html", {
+        'nombre': 'Galdamio',
+        'fecha_actual': date.today()
+    })    
