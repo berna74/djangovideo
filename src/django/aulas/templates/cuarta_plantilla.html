@@ -2,13 +2,26 @@
 
     <body>
 
-    <h1>Hola {{nombre}}!! </h1>
+    <h1>Hola {{mi_empleado.nombre}} <i>{{mi_empleado.apellido}}</i>! </h1>
 
-    <p>Esta es mi cuarta plantilla en Django <br>
-       Hoy es {{ fecha_actual.year }}/{{ fecha_actual.month }}/{{ fecha_actual.day }}  
+   <h2>Esta es mi cuarta plantilla en Django <br>
+       Hoy es {{ fecha_actual.year }}/{{ fecha_actual.month }}/{{ fecha_actual.day }}    </h2>
+     <p>
+      El empleado trabaja los días:
+     </p>
+       {%if dias_laborables %}
+      <ul>
+        
+         {% for elemento in dias_laborables %}
+            <li>
+               {{ elemento }}
+            </li>
+         {% endfor %}
+               
+      </ul>
 
-    </p>
-     
+   {% endif %}
+   
      </body> 
 
      </html>
