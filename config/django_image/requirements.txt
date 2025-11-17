@@ -1,4 +1,6 @@
-django
+Django
 psycopg2-binary
+django-rest-auth
 djangorestframework
-djangorestframework-simplejwt
+djangorestframework-jwt
+python-dotenv

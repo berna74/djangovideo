@@ -16,9 +16,9 @@ Including another URLconf
 """ 
 from django.contrib import admin
 from django.urls import path, include
-from aulas import urls 
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('aulas/', include(urls)),  # Include URLs from the aulas app
+    path('aulas/', include('aulas.urls')),  # Include URLs from the aulas app
 ]
